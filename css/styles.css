@@ -1,0 +1,49 @@
+.xl-text {
+  font-size: 65px;
+}
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(../img/Autism.jpg) left center no-repeat;
+  background-size: cover;
+  height: 600px;
+  z-index: -1;
+}
+
+.hr-heading {
+  display: inline-block;
+  width: 3.5rem;
+  height: 0.125rem;
+  margin-top: 0.625rem;
+  border: none;
+  background-color: var(--bs-primary);
+  opacity: 1;
+}
+
+.vertical-decoration {
+  top: 12%;
+  width: 24px;
+  z-index: 1;
+}
+
+.details .vertical-decoration {
+  top: 25px;
+  left: 0;
+  width: 24px;
+}
+
+.details-2 .vertical-decoration {
+  top: 25px;
+  right: 0;
+  width: 24px;
+}
+
+@media (max-width: 992px) {
+  .xl-text {
+    font-size: 50px;
+  }
+  .header {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(../img/Autism.jpg) center center no-repeat;
+    z-index: -1;
+  }
+}
