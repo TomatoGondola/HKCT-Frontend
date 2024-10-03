@@ -1,0 +1,339 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+
+		<link rel="stylesheet" href="css/fontawesome.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap"
+			rel="stylesheet" />
+		<title>Sassy</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+			<div class="container">
+				<span class="fa-stack">
+					<a href="#" class="navbar-brand"
+						><img
+							src="img/decoration-star.svg"
+							alt=""
+							class="star position-relative" />
+						<i
+							class="fas fa-user-graduate fa-stack-2x ps-4 ms-5"
+							style="color: white"></i> </a
+				></span>
+				<a href="#"> </a>
+				<img
+					src="img/banner-svgrepo-com.svg"
+					alt=""
+					class="banner position-absolute" />
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNavDropdown">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Courses</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Register</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+					</ul>
+					<span class="nav-item">
+						<span class="fa-stack">
+							<a href="https://facebook.com" target="_blank">
+								<i class="fas fa-circle fa-stack-2x"></i>
+								<i class="fab fa-twitter fa-stack-1x text-white"></i>
+							</a>
+						</span>
+						<span class="fa-stack">
+							<a href="https://facebook.com" target="_blank">
+								<i class="fas fa-circle fa-stack-2x"></i>
+								<i class="fab fa-facebook fa-stack-1x text-white"></i>
+							</a>
+						</span>
+					</span>
+				</div>
+			</div>
+		</nav>
+		<button
+			class="btn btn-primary rounded-0"
+			type="button"
+			data-bs-toggle="offcanvas"
+			data-bs-target="#offcanvasWithBothOptions"
+			aria-controls="offcanvasWithBothOptions">
+			Articles Sidebar
+		</button>
+
+		<div
+			class="offcanvas bg-secondary lead offcanvas-start"
+			data-bs-scroll="true"
+			tabindex="-1"
+			id="offcanvasWithBothOptions"
+			aria-labelledby="offcanvasWithBothOptionsLabel">
+			<div class="offcanvas-header">
+				<a
+					href="/"
+					class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
+					<img
+						src="img/linux-opened-svgrepo-com.svg"
+						alt=""
+						class="penguin-zero p-3" />
+					<span class="fs-5 fw-semibold">Articles Famz</span>
+				</a>
+
+				<button
+					type="button"
+					class="btn-close"
+					data-bs-dismiss="offcanvas"
+					aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<div class="flex-shrink-0 p-3" style="width: 280px">
+					<ul class="list-unstyled ps-0">
+						<li class="mb-1">
+							<button
+								class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+								data-bs-toggle="collapse"
+								data-bs-target="#home-collapse"
+								aria-expanded="true">
+								Home
+							</button>
+							<div class="collapse lead show" id="home-collapse">
+								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Overview</a
+										>
+									</li>
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Updates</a
+										>
+									</li>
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Reports</a
+										>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="mb-1">
+							<button
+								class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+								data-bs-toggle="collapse"
+								data-bs-target="#dashboard-collapse"
+								aria-expanded="false">
+								Dashboard
+							</button>
+							<div class="collapse" id="dashboard-collapse">
+								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Overview</a
+										>
+									</li>
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Weekly</a
+										>
+									</li>
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Monthly</a
+										>
+									</li>
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Annually</a
+										>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="mb-1">
+							<button
+								class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+								data-bs-toggle="collapse"
+								data-bs-target="#orders-collapse"
+								aria-expanded="false">
+								Orders
+							</button>
+							<div class="collapse" id="orders-collapse">
+								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>New</a
+										>
+									</li>
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Processed</a
+										>
+									</li>
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Shipped</a
+										>
+									</li>
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Returned</a
+										>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="border-top my-3"></li>
+						<li class="mb-1">
+							<button
+								class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+								data-bs-toggle="collapse"
+								data-bs-target="#account-collapse"
+								aria-expanded="false">
+								Account
+							</button>
+							<div class="collapse" id="account-collapse">
+								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>New...</a
+										>
+									</li>
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Profile</a
+										>
+									</li>
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Settings</a
+										>
+									</li>
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Sign out</a
+										>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<p>Try scrolling.</p>
+			</div>
+		</div>
+
+		<form>
+			<label for="birthday">Birthday:</label>
+			<input type="date" id="birthday" name="birthday" />
+		</form>
+		<form method="post" action="{% url 'your_view_name' %}">
+			{% csrf_token %}
+			<label for="birthday">Birthday:</label>
+			<input type="date" id="birthday" name="birthday" />
+			<button type="submit">Submit</button>
+		</form>
+
+		<footer class="footer bg-secondary py-5">
+			<img
+				src="img/linux-opened-svgrepo-com.svg"
+				alt=""
+				class="penguin pengiun position-absolute" />
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 my3">
+						<h6>Damaged Soul</h6>
+						<p>
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+							Obcaecati voluptas beatae modi fuga!
+						</p>
+					</div>
+					<div class="col-md-4 my-3">
+						<h6>Weirdoes in my Drive-way</h6>
+						<ul class="list-unstyled">
+							<li>
+								Important: <a href="#">Terms & Conditions</a>,
+								<a href="#">Timmy-Land</a>
+							</li>
+							<li>
+								Situational: <a href="#"> DP+Three Kicks</a>,
+								<a href="#"> Danny's Got No Super</a>,
+								<a href="#"> Clown World, Honk Honk</a>
+							</li>
+							<li>
+								Straight Up Fraudulent:
+								<a href="#"> He is a Dead-Beat Daddy</a>,
+								<a href="#">Spends all his Money on Styling Product</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4 my-3">
+						<div class="mb-4">
+							<a href="#" class="text-decoration-none">
+								<i class="fab fa-facebook fa-3x text-light mx-2"></i>
+							</a>
+							<a href="#" class="text-decoration-none">
+								<i class="fab fa-twitter fa-3x text-light mx-2"></i>
+							</a>
+							<a href="#" class="text-decoration-none">
+								<i class="fab fa-instagram fa-3x text-light mx-2"></i>
+							</a>
+							<a href="#" class="text-decoration-none">
+								<i class="fab fa-alipay fa-3x text-light mx-2"></i>
+							</a>
+						</div>
+						<p>Please do not contact us, we're not here to work</p>
+						<a href="#">
+							<strong
+								>Anything sent through the mailing address will be forwarded to
+								scammers in India.com</strong
+							></a
+						>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<button class="to-top-btn" id="to-top">
+			<img src="img/up-arrow.png" alt="" />
+		</button>
+		<script src="js/replaceme.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
