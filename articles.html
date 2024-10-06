@@ -60,6 +60,13 @@
 				</div>
 			</div>
 		</nav>
+		<!-- header  -->
+		<header class="bg-secondary py-5">
+			<div class="container">
+				<h1 class="display-1">Article of the Day</h1>
+			</div>
+		</header>
+		<!-- sidebar-nav  -->
 		<button
 			class="btn btn-primary rounded-0"
 			type="button"
@@ -255,20 +262,210 @@
 						</li>
 					</ul>
 				</div>
-				<p>Try scrolling.</p>
 			</div>
 		</div>
 
-		<form>
-			<label for="birthday">Birthday:</label>
-			<input type="date" id="birthday" name="birthday" />
-		</form>
-		<form method="post" action="{% url 'your_view_name' %}">
-			{% csrf_token %}
-			<label for="birthday">Birthday:</label>
-			<input type="date" id="birthday" name="birthday" />
+		<form method="post" action="/your-server-endpoint">
+			<label for="start_date">Start Date:</label>
+			<input type="date" id="start_date" name="start_date" required />
+
+			<label for="end_date">End Date:</label>
+			<input type="date" id="end_date" name="end_date" required />
+
 			<button type="submit">Submit</button>
 		</form>
+		<br />
+		<hr class="hr-heading bg-danger" />
+		<!-- Top Article  -->
+		<section>
+			<div class="container border border-warning">
+				<div class="row">
+					<div class="col-lg-8">
+						<header><h1 class="fw-bold">Smelly Cat of the Day</h1></header>
+						<hr class="hr-heading bg-danger" />
+						<div class="card bg-primary text-dark">
+							<div class="row g-0">
+								<div class="col-lg-8 border border-danger">
+									<img src="img/MHudson.jpg" class="img-fluid" />
+								</div>
+								<div class="col-lg-4 border border-danger">
+									<div class="card-body">
+										<h2 class="card-title fw-bold">Card title</h2>
+										<p class="card-text">
+											This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a
+											little bit longer.
+										</p>
+										<p class="card-text">
+											<small class="text-body-secondary text-dark"
+												>Last updated 3 mins ago</small
+											>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container border border-success">
+							<div class="row">
+								<div class="row row-cols-1 row-cols-md-3 g-4">
+									<div class="col">
+										<div class="card">
+											<img
+												src="img/MHudson.jpg"
+												class="card-img-top"
+												alt="..." />
+											<div class="card-body">
+												<h5 class="card-title">Card title</h5>
+												<p class="card-text">
+													This is a longer card with supporting text below as a
+													natural lead-in to additional content. This content is
+													a little bit longer.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col">
+										<div class="card">
+											<img
+												src="img/Mit-Lab.jpg"
+												class="card-img-top"
+												alt="..." />
+											<div class="card-body">
+												<h5 class="card-title">Card title</h5>
+												<p class="card-text">
+													This is a longer card with supporting text below as a
+													natural lead-in to additional content. This content is
+													a little bit longer.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col">
+										<div class="card h-100">
+											<img src="img/Beige.jpg" class="card-img-top" alt="..." />
+											<div class="card-body">
+												<h5 class="card-title">Card title</h5>
+												<p class="card-text">
+													This is a longer card with supporting text below as a
+													natural lead-in to additional content.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 my-3">
+						<div class="row">
+							<div class="card h-100">
+								<img src="img/Mit-Lab.jpg" class="card-img-top" alt="" />
+								<div class="card-body bg-light text-dark">
+									<h5 class="card-title fw-bold">Mew mew</h5>
+									<p class="card-text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Saepe ex voluptate ullam?
+									</p>
+									<p class="card-text">
+										<small class="text-body-secondary"
+											>Last updated 3 mins ago</small
+										>
+									</p>
+								</div>
+								<br />
+							</div>
+							<div class="card h-100">
+								<div class="card-body my-4 bg-light text-dark">
+									<h5 class="card-title fw-bold">Mew mew</h5>
+									<p class="card-text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Saepe ex voluptate ullam?
+									</p>
+									<p class="card-text">
+										<small class="text-body-dark"
+											>Last updated 3 mins ago</small
+										>
+									</p>
+								</div>
+							</div>
+							<div class="card h-100">
+								<div class="card-body my-4 bg-light text-dark">
+									<h5 class="card-title fw-bold">Mew mew</h5>
+									<p class="card-text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Saepe ex voluptate ullam?
+									</p>
+									<p class="card-text">
+										<small class="text-body-secondary"
+											>Last updated 3 mins ago</small
+										>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="fluid">
+			<div class="container-fluid bg-secondary p-7">
+				<div class="container">
+					<header><h2 class="fw-bold">Career Paths</h2></header>
+					<div class="row">
+						<div class="row row-cols-1 row-cols-md-3 g-4">
+							<div class="col">
+								<div class="card h-100">
+									<img src="..." class="card-img-top" alt="..." />
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">
+											This is a longer card with supporting text below as a
+											natural lead-in to additional content. This content is a
+											little bit longer.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card h-100">
+									<img src="..." class="card-img-top" alt="..." />
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">This is a short card.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card h-100">
+									<img src="..." class="card-img-top" alt="..." />
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">
+											This is a longer card with supporting text below as a
+											natural lead-in to additional content.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card h-100">
+									<img src="..." class="card-img-top" alt="..." />
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">
+											This is a longer card with supporting text below as a
+											natural lead-in to additional content. This content is a
+											little bit longer.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<footer class="footer bg-secondary py-5">
 			<img
