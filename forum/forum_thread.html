@@ -60,79 +60,97 @@
 				</div>
 			</div>
 		</nav>
-		<section id="register" class="py-5">
-			<div class="container">
+		<div class="container-fluid py-4 bg-dark">
+			<!-- title  -->
+			<div class="container py-4">
 				<div class="row">
-					<div class="col-md-6 mx-auto">
-						<div class="card bg-info">
-							<div class="card-header bg-primary text-white">
-								<h4><i class="fas fa-user-plus"></i> Register</h4>
-							</div>
+					<div class="col-md-10">
+						<h2 class="my-4">Thread Title</h2>
+						<h5>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+							doloribus explicabo consequatur?
+						</h5>
+					</div>
+					<div class="col-md-2 pt-6">
+						<a href="#"
+							><button type="button" class="btn btn-primary">
+								Submit Thread
+							</button></a
+						>
+					</div>
+				</div>
+			</div>
+			<!-- threads  -->
+			<div class="container px-2 bg-dark">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card bg-warning my-4 pt-2 text-dark">
 							<div class="card-body">
-								<form action="index.html">
-									<div class="form-group">
-										<input
-											type="text"
-											name="first_name"
-											class="form-control my-3 bg-secondary"
-											placeholder="First Name"
-											required />
+								<div class="row d-flex g-0">
+									<div class="col-md-1">
+										<i class="px-3 my-2 far fa-cow fa-2x"></i>
 									</div>
-									<div class="form-group">
-										<input
-											type="text"
-											name="last_name"
-											class="form-control my-3 bg-secondary"
-											placeholder="Last Name"
-											required />
+									<div class="col-md-7">
+										<h5 class="card-title"><a href="#">Category</a></h5>
+										<p>
+											<small
+												>Lorem ipsum dolor sit amet, consectetur adipisicing
+												elit. Cupiditate quod magnam ratione!</small
+											>
+										</p>
+										<hr />
+										<p>
+											<small>Time Since | Thread Title</small>
+										</p>
 									</div>
-									<div class="form-group">
-										<input
-											type="text"
-											name="username"
-											class="form-control my-3 bg-secondary"
-											placeholder="Username"
-											required />
+									<div class="col-md-1">
+										<p><small>Threads</small></p>
+										<p><small>Messages</small></p>
 									</div>
-									<div class="form-group">
-										<input
-											type="email"
-											name="email"
-											class="form-control my-3 bg-secondary"
-											placeholder="Email"
-											required />
+									<div class="col-md-2">
+										<h6>Username</h6>
+										<img
+											src="img/capy.jpg"
+											alt=""
+											class="card-img-top rounded-5" />
 									</div>
-									<div class="form-group">
-										<input
-											type="password"
-											name="password"
-											class="form-control my-3 bg-secondary"
-											placeholder="Password"
-											required />
-									</div>
-									<div class="form-group">
-										<input
-											type="password"
-											name="password2"
-											class="form-control my-3 bg-secondary"
-											placeholder="Confirm Password"
-											required />
-									</div>
-									<div class="d-flex flex-row justify-content-center">
-										<div class="d-flex">
-											<input
-												type="submit"
-												value="Register"
-												class="btn btn-secondary align-content-center mt-3 rounded-2" />
-										</div>
-									</div>
-								</form>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<!-- paginator  -->
+				<nav>
+					<ul class="pagination justify-content-center">
+						<li class="page-item">
+							<a
+								class="page-link text-dark bg-warning"
+								href="#"
+								aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link text-dark bg-warning" href="#">1</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link text-dark bg-warning" href="#">2</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link text-dark bg-warning" href="#">3</a>
+						</li>
+						<li class="page-item">
+							<a
+								class="page-link text-dark bg-warning"
+								href="#"
+								aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
-		</section>
+		</div>
 
 		<footer class="footer bg-secondary py-5">
 			<img

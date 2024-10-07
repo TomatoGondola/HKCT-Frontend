@@ -60,21 +60,8 @@
 				</div>
 			</div>
 		</nav>
-		<!-- header  -->
-		<header class="bg-secondary py-5">
-			<div class="container">
-				<h1 class="display-1">Article of the Day</h1>
-			</div>
-		</header>
+
 		<!-- sidebar-nav  -->
-		<button
-			class="btn btn-primary rounded-0"
-			type="button"
-			data-bs-toggle="offcanvas"
-			data-bs-target="#offcanvasWithBothOptions"
-			aria-controls="offcanvasWithBothOptions">
-			Articles Sidebar
-		</button>
 
 		<div
 			class="offcanvas bg-secondary lead offcanvas-start"
@@ -264,92 +251,159 @@
 				</div>
 			</div>
 		</div>
+		<!-- article expander -->
+		<nav class="navbar navbar-expand-lg sticky-top">
+			<div class="container d-flex justify-content-center">
+				<button
+					class="btn btn-primary px-8 rounded-0"
+					type="button"
+					data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasWithBothOptions"
+					aria-controls="offcanvasWithBothOptions">
+					<span class="strong">Article Sidebar</span>
+				</button>
+			</div>
+		</nav>
 
-		<form method="post" action="/your-server-endpoint">
-			<label for="start_date">Start Date:</label>
-			<input type="date" id="start_date" name="start_date" required />
-
-			<label for="end_date">End Date:</label>
-			<input type="date" id="end_date" name="end_date" required />
-
-			<button type="submit">Submit</button>
-		</form>
-		<br />
-		<hr class="hr-heading bg-danger" />
-		<!-- Top Article  -->
 		<section>
-			<div class="container border border-warning">
+			<div class="container my-4 p-3 border border-danger">
 				<div class="row">
-					<div class="col-lg-8">
-						<header><h1 class="fw-bold">Smelly Cat of the Day</h1></header>
-						<hr class="hr-heading bg-danger" />
-						<div class="card bg-primary text-dark">
-							<div class="row g-0">
-								<div class="col-lg-8 border border-danger">
-									<img src="img/MHudson.jpg" class="img-fluid" />
+					<div class="col-md-9 border border-danger">
+						<header>
+							<h2 class="strong">Times are Changing for the Better??</h2>
+						</header>
+						<hr class="hr-heading bg-warning" />
+						<p><small>Date Time 2024</small></p>
+						<footer class="blockquote-footer">Author - name</footer>
+						<hr />
+						<div class="card" style="width: fluid">
+							<img src="img/capy.jpg" class="card-img-top" alt="..." />
+							<div class="card-body bg-dark">
+								<p class="card-text">
+									Some quick example text to build on the card title and make up
+									the bulk of the card's content.
+								</p>
+							</div>
+						</div>
+						<div class="card" style="width: fluid">
+							<p class="lead indent-paragraph">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+								Accusantium, ducimus cumque sint ex quidem deserunt facilis
+								dolores atque eum dicta magnam dignissimos, eaque cupiditate
+								veritatis ipsam, natus nam vero nihil iusto fuga! Sit
+								praesentium ullam corrupti velit ab,
+							</p>
+							<p class="indent-paragraph">
+								unde placeat aliquid et architecto quod laborum aut consequatur
+								doloremque iure sint a expedita impedit omnis autem. Architecto
+								sit sed neque eligendi! Libero veniam amet quod, est, dolores
+								explicabo voluptatibus at soluta quo earum modi dolorem tenetur
+								nemo expedita. Quibusdam, sint. Soluta magnam maxime labore
+								eveniet impedit quod, sapiente mollitia magni! Doloremque at ab
+								quod rerum libero consectetur, ea quis voluptate veritatis
+								aperiam nulla distinctio velit, enim aut nesciunt illum adipisci
+								ipsam, eaque ad officia deleniti. Doloremque, sint eaque, id
+								cumque dolorem praesentium cupiditate ab, fugit nobis ratione
+								incidunt reprehenderit dolores mollitia vitae maxime expedita
+								sequi labore hic a. Quod eligendi dolorem reprehenderit nemo
+								expedita deleniti quibusdam quas consequuntur, est odit quae qui
+								repellendus suscipit ipsum maiores mollitia voluptatum fugiat
+								temporibus eveniet explicabo. Cupiditate tempora maiores modi
+								eaque hic, voluptatibus obcaecati voluptatem quis eum quos atque
+								debitis repellendus facere nobis beatae similique libero officia
+								illo ipsam voluptate nihil sit. Ducimus possimus dolorem, modi
+								nisi, aperiam quae porro, voluptatum fuga illo deleniti incidunt
+								a molestias suscipit culpa ad repellendus expedita! Minus
+								nesciunt eveniet est dolore earum doloribus porro voluptatem,
+								commodi culpa! Consectetur magnam molestias repudiandae earum.
+								Quibusdam fuga voluptatem dolorem nesciunt, sunt blanditiis!
+							</p>
+							<!-- blockquote  -->
+							<div class="card">
+								<img
+									src="img/Autism.jpg"
+									alt=""
+									class="card-img-top article-card" />
+								<div class="bg-dark card-body">
+									<figure class="text-center">
+										<blockquote class="blockquote">
+											<p>
+												A well-known quote, contained in a blockquote element.
+											</p>
+										</blockquote>
+										<figcaption class="blockquote-footer">
+											Someone famous in
+											<cite title="Source Title">Source Title</cite>
+										</figcaption>
+									</figure>
 								</div>
-								<div class="col-lg-4 border border-danger">
-									<div class="card-body">
-										<h2 class="card-title fw-bold">Card title</h2>
-										<p class="card-text">
-											This is a wider card with supporting text below as a
-											natural lead-in to additional content. This content is a
-											little bit longer.
-										</p>
-										<p class="card-text">
-											<small class="text-body-secondary text-dark"
-												>Last updated 3 mins ago</small
-											>
-										</p>
+							</div>
+							<!-- Additional Paragraphs -->
+							<p class="indent-paragraph">
+								Another paragraph of text goes here. Lorem ipsum dolor sit amet,
+								consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+								labore et dolore magna aliqua.
+							</p>
+							<p>
+								Yet another paragraph of text. Ut enim ad minim veniam, quis
+								nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+								commodo consequat.
+							</p>
+							<!-- Outro Text -->
+							<p class="indent-paragraph text-muted">
+								This is the outro text. Thank you for reading!
+							</p>
+							<hr />
+							<!-- commet submit  -->
+							<div class="row g-2">
+								<div class="col-md-2 py-4">
+									<div class="card">
+										<img src="img/capy.jpg" alt="" class="rounded-circle" />
+									</div>
+								</div>
+								<div class="col-md-10">
+									<label for="exampleFormControlTextarea1" class="form-label"
+										>Comment</label
+									>
+									<textarea
+										class="form-control"
+										id="exampleFormControlTextarea1"
+										rows="3"></textarea>
+									<div
+										class="d-grid gap-2 d-md-flex justify-content-md-end my-3 me-2">
+										<button type="button" class="btn btn-primary rounded-1">
+											Submit
+										</button>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="container border border-success">
-							<div class="row">
-								<div class="row row-cols-1 row-cols-md-3 g-4">
-									<div class="col">
-										<div class="card">
-											<img
-												src="img/MHudson.jpg"
-												class="card-img-top"
-												alt="..." />
-											<div class="card-body">
-												<h5 class="card-title">Card title</h5>
-												<p class="card-text">
-													This is a longer card with supporting text below as a
-													natural lead-in to additional content. This content is
-													a little bit longer.
-												</p>
-											</div>
-										</div>
+
+							<!-- user comments  -->
+							<div class="row g-2">
+								<div class="col-md-2">
+									<div class="card">
+										<img src="img/capy.jpg" alt="" class="rounded-circle" />
 									</div>
-									<div class="col">
-										<div class="card">
-											<img
-												src="img/Mit-Lab.jpg"
-												class="card-img-top"
-												alt="..." />
-											<div class="card-body">
-												<h5 class="card-title">Card title</h5>
-												<p class="card-text">
-													This is a longer card with supporting text below as a
-													natural lead-in to additional content. This content is
-													a little bit longer.
-												</p>
+								</div>
+								<div class="col-md-10">
+									<div class="card">
+										<div class="card-body">
+											<div class="d-flex p-2">
+												<div class="">
+													<h4>Username</h4>
+
+													<p><small>Time Since</small></p>
+												</div>
+												<div class="ms-auto">
+													<i class="fas fa-flag fa-2x text-danger"></i>
+												</div>
 											</div>
-										</div>
-									</div>
-									<div class="col">
-										<div class="card h-100">
-											<img src="img/Beige.jpg" class="card-img-top" alt="..." />
-											<div class="card-body">
-												<h5 class="card-title">Card title</h5>
-												<p class="card-text">
-													This is a longer card with supporting text below as a
-													natural lead-in to additional content.
-												</p>
-											</div>
+
+											<hr />
+											<p class="lead">
+												Lorem ipsum dolor sit amet, consectetur adipisicing
+												elit. Reprehenderit odio facilis delectus.
+											</p>
 										</div>
 									</div>
 								</div>
@@ -357,7 +411,8 @@
 						</div>
 					</div>
 
-					<div class="col-lg-4 my-3">
+					<!-- side articles -->
+					<div class="col-md-3 my-3">
 						<div class="row">
 							<div class="card h-100">
 								<img src="img/Mit-Lab.jpg" class="card-img-top" alt="" />
@@ -368,7 +423,7 @@
 										Saepe ex voluptate ullam?
 									</p>
 									<p class="card-text">
-										<small class="text-body-secondary"
+										<small class="text-body-darks"
 											>Last updated 3 mins ago</small
 										>
 									</p>
@@ -408,65 +463,6 @@
 				</div>
 			</div>
 		</section>
-		<section class="fluid">
-			<div class="container-fluid bg-secondary p-7">
-				<div class="container">
-					<header><h2 class="fw-bold">Career Paths</h2></header>
-					<div class="row">
-						<div class="row row-cols-1 row-cols-md-3 g-4">
-							<div class="col">
-								<div class="card h-100">
-									<img src="..." class="card-img-top" alt="..." />
-									<div class="card-body">
-										<h5 class="card-title">Card title</h5>
-										<p class="card-text">
-											This is a longer card with supporting text below as a
-											natural lead-in to additional content. This content is a
-											little bit longer.
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="col">
-								<div class="card h-100">
-									<img src="..." class="card-img-top" alt="..." />
-									<div class="card-body">
-										<h5 class="card-title">Card title</h5>
-										<p class="card-text">This is a short card.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col">
-								<div class="card h-100">
-									<img src="..." class="card-img-top" alt="..." />
-									<div class="card-body">
-										<h5 class="card-title">Card title</h5>
-										<p class="card-text">
-											This is a longer card with supporting text below as a
-											natural lead-in to additional content.
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="col">
-								<div class="card h-100">
-									<img src="..." class="card-img-top" alt="..." />
-									<div class="card-body">
-										<h5 class="card-title">Card title</h5>
-										<p class="card-text">
-											This is a longer card with supporting text below as a
-											natural lead-in to additional content. This content is a
-											little bit longer.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
 		<footer class="footer bg-secondary py-5">
 			<img
 				src="img/linux-opened-svgrepo-com.svg"

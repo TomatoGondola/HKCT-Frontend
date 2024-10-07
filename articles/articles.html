@@ -1,0 +1,536 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+
+		<link rel="stylesheet" href="css/fontawesome.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap"
+			rel="stylesheet" />
+		<title>Sassy</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+			<div class="container">
+				<span class="fa-stack">
+					<a href="#" class="navbar-brand"
+						><img
+							src="img/decoration-star.svg"
+							alt=""
+							class="star position-relative" />
+						<i
+							class="fas fa-user-graduate fa-stack-2x ps-4 ms-5"
+							style="color: white"></i> </a
+				></span>
+				<a href="#"> </a>
+				<img
+					src="img/banner-svgrepo-com.svg"
+					alt=""
+					class="banner position-absolute" />
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNavDropdown">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Courses</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Register</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+					</ul>
+					<span class="nav-item">
+						<span class="fa-stack">
+							<a href="https://facebook.com" target="_blank">
+								<i class="fas fa-circle fa-stack-2x"></i>
+								<i class="fab fa-twitter fa-stack-1x text-white"></i>
+							</a>
+						</span>
+						<span class="fa-stack">
+							<a href="https://facebook.com" target="_blank">
+								<i class="fas fa-circle fa-stack-2x"></i>
+								<i class="fab fa-facebook fa-stack-1x text-white"></i>
+							</a>
+						</span>
+					</span>
+				</div>
+			</div>
+		</nav>
+
+		<!-- header  -->
+		<header class="bg-secondary py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 px-2">
+						<h1 class="display-1">Article of the Day</h1>
+					</div>
+					<div class="col-md-2 px-2"></div>
+				</div>
+			</div>
+		</header>
+		<!-- sidebar-nav  -->
+
+		<div
+			class="offcanvas bg-secondary lead offcanvas-start"
+			data-bs-scroll="true"
+			tabindex="-1"
+			id="offcanvasWithBothOptions"
+			aria-labelledby="offcanvasWithBothOptionsLabel">
+			<div class="offcanvas-header">
+				<a
+					href="/"
+					class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
+					<img
+						src="img/linux-opened-svgrepo-com.svg"
+						alt=""
+						class="penguin-zero p-3" />
+					<span class="fs-5 fw-semibold">Articles Famz</span>
+				</a>
+
+				<button
+					type="button"
+					class="btn-close"
+					data-bs-dismiss="offcanvas"
+					aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<div class="flex-shrink-0 p-3" style="width: 280px">
+					<ul class="list-unstyled ps-0">
+						<li class="mb-1">
+							<button
+								class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+								data-bs-toggle="collapse"
+								data-bs-target="#home-collapse"
+								aria-expanded="true">
+								Home
+							</button>
+							<div class="collapse lead show" id="home-collapse">
+								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Overview</a
+										>
+									</li>
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Updates</a
+										>
+									</li>
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Reports</a
+										>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="mb-1">
+							<button
+								class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+								data-bs-toggle="collapse"
+								data-bs-target="#dashboard-collapse"
+								aria-expanded="false">
+								Dashboard
+							</button>
+							<div class="collapse" id="dashboard-collapse">
+								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Overview</a
+										>
+									</li>
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Weekly</a
+										>
+									</li>
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Monthly</a
+										>
+									</li>
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Annually</a
+										>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="mb-1">
+							<button
+								class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+								data-bs-toggle="collapse"
+								data-bs-target="#orders-collapse"
+								aria-expanded="false">
+								Orders
+							</button>
+							<div class="collapse" id="orders-collapse">
+								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>New</a
+										>
+									</li>
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Processed</a
+										>
+									</li>
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Shipped</a
+										>
+									</li>
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Returned</a
+										>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="border-top my-3"></li>
+						<li class="mb-1">
+							<button
+								class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+								data-bs-toggle="collapse"
+								data-bs-target="#account-collapse"
+								aria-expanded="false">
+								Account
+							</button>
+							<div class="collapse" id="account-collapse">
+								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>New...</a
+										>
+									</li>
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Profile</a
+										>
+									</li>
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Settings</a
+										>
+									</li>
+									<li>
+										<a
+											href="#"
+											class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+											>Sign out</a
+										>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- article expander -->
+		<nav class="navbar navbar-expand-lg sticky-top">
+			<div class="container d-flex justify-content-center">
+				<button
+					class="btn btn-primary px-8 rounded-0"
+					type="button"
+					data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasWithBothOptions"
+					aria-controls="offcanvasWithBothOptions">
+					<span class="strong">Article Sidebar</span>
+				</button>
+			</div>
+		</nav>
+
+		<!-- Top Article  -->
+		<section>
+			<div class="container border border-warning">
+				<div class="row">
+					<div class="col-lg-8">
+						<header><h1 class="fw-bold">Smelly Cat of the Day</h1></header>
+						<hr class="hr-heading bg-danger" />
+						<div class="card bg-primary text-dark">
+							<div class="row g-0">
+								<div class="col-lg-8 border border-danger">
+									<img src="img/MHudson.jpg" class="img-fluid" />
+								</div>
+								<div class="col-lg-4 border border-danger">
+									<div class="card-body">
+										<h2 class="card-title fw-bold">Card title</h2>
+										<p class="card-text">
+											This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a
+											little bit longer.
+										</p>
+										<p class="card-text">
+											<small class="text-body-secondary text-dark"
+												>Last updated 3 mins ago</small
+											>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container border border-success">
+							<div class="row">
+								<div class="row row-cols-1 row-cols-md-3 g-4">
+									<div class="col">
+										<div class="card">
+											<img
+												src="img/MHudson.jpg"
+												class="card-img-top"
+												alt="..." />
+											<div class="card-body">
+												<h5 class="card-title">Card title</h5>
+												<p class="card-text">
+													This is a longer card with supporting text below as a
+													natural lead-in to additional content. This content is
+													a little bit longer.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col">
+										<div class="card">
+											<img
+												src="img/Mit-Lab.jpg"
+												class="card-img-top"
+												alt="..." />
+											<div class="card-body">
+												<h5 class="card-title">Card title</h5>
+												<p class="card-text">
+													This is a longer card with supporting text below as a
+													natural lead-in to additional content. This content is
+													a little bit longer.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col">
+										<div class="card h-100">
+											<img src="img/Beige.jpg" class="card-img-top" alt="..." />
+											<div class="card-body">
+												<h5 class="card-title">Card title</h5>
+												<p class="card-text">
+													This is a longer card with supporting text below as a
+													natural lead-in to additional content.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 my-3">
+						<div class="row">
+							<div class="card h-100">
+								<img src="img/Mit-Lab.jpg" class="card-img-top" alt="" />
+								<div class="card-body bg-light text-dark">
+									<h5 class="card-title fw-bold">Mew mew</h5>
+									<p class="card-text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Saepe ex voluptate ullam?
+									</p>
+									<p class="card-text">
+										<small class="text-body-secondary"
+											>Last updated 3 mins ago</small
+										>
+									</p>
+								</div>
+								<br />
+							</div>
+							<div class="card h-100">
+								<div class="card-body my-4 bg-light text-dark">
+									<h5 class="card-title fw-bold">Mew mew</h5>
+									<p class="card-text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Saepe ex voluptate ullam?
+									</p>
+									<p class="card-text">
+										<small class="text-body-dark"
+											>Last updated 3 mins ago</small
+										>
+									</p>
+								</div>
+							</div>
+							<div class="card h-100">
+								<div class="card-body my-4 bg-light text-dark">
+									<h5 class="card-title fw-bold">Mew mew</h5>
+									<p class="card-text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Saepe ex voluptate ullam?
+									</p>
+									<p class="card-text">
+										<small class="text-body-secondary"
+											>Last updated 3 mins ago</small
+										>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="fluid">
+			<div class="container-fluid bg-secondary p-7">
+				<div class="container">
+					<header><h2 class="fw-bold">Career Paths</h2></header>
+					<div class="row">
+						<div class="row row-cols-1 row-cols-md-3 g-4">
+							<div class="col">
+								<div class="card h-100">
+									<img src="..." class="card-img-top" alt="..." />
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">
+											This is a longer card with supporting text below as a
+											natural lead-in to additional content. This content is a
+											little bit longer.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card h-100">
+									<img src="..." class="card-img-top" alt="..." />
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">This is a short card.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card h-100">
+									<img src="..." class="card-img-top" alt="..." />
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">
+											This is a longer card with supporting text below as a
+											natural lead-in to additional content.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card h-100">
+									<img src="..." class="card-img-top" alt="..." />
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">
+											This is a longer card with supporting text below as a
+											natural lead-in to additional content. This content is a
+											little bit longer.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer bg-secondary py-5">
+			<img
+				src="img/linux-opened-svgrepo-com.svg"
+				alt=""
+				class="penguin pengiun position-absolute" />
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 my3">
+						<h6>Damaged Soul</h6>
+						<p>
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+							Obcaecati voluptas beatae modi fuga!
+						</p>
+					</div>
+					<div class="col-md-4 my-3">
+						<h6>Weirdoes in my Drive-way</h6>
+						<ul class="list-unstyled">
+							<li>
+								Important: <a href="#">Terms & Conditions</a>,
+								<a href="#">Timmy-Land</a>
+							</li>
+							<li>
+								Situational: <a href="#"> DP+Three Kicks</a>,
+								<a href="#"> Danny's Got No Super</a>,
+								<a href="#"> Clown World, Honk Honk</a>
+							</li>
+							<li>
+								Straight Up Fraudulent:
+								<a href="#"> He is a Dead-Beat Daddy</a>,
+								<a href="#">Spends all his Money on Styling Product</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4 my-3">
+						<div class="mb-4">
+							<a href="#" class="text-decoration-none">
+								<i class="fab fa-facebook fa-3x text-light mx-2"></i>
+							</a>
+							<a href="#" class="text-decoration-none">
+								<i class="fab fa-twitter fa-3x text-light mx-2"></i>
+							</a>
+							<a href="#" class="text-decoration-none">
+								<i class="fab fa-instagram fa-3x text-light mx-2"></i>
+							</a>
+							<a href="#" class="text-decoration-none">
+								<i class="fab fa-alipay fa-3x text-light mx-2"></i>
+							</a>
+						</div>
+						<p>Please do not contact us, we're not here to work</p>
+						<a href="#">
+							<strong
+								>Anything sent through the mailing address will be forwarded to
+								scammers in India.com</strong
+							></a
+						>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<button class="to-top-btn" id="to-top">
+			<img src="img/up-arrow.png" alt="" />
+		</button>
+		<script src="js/replaceme.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
