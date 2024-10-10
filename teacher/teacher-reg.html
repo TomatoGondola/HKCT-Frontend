@@ -2,10 +2,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="../css/styles.css" />
+		<link rel="stylesheet" href="../css/bootstrap.css" />
 
-		<link rel="stylesheet" href="css/fontawesome.css" />
+		<link rel="stylesheet" href="../css/fontawesome.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap"
 			rel="stylesheet" />
@@ -17,7 +17,7 @@
 				<span class="fa-stack">
 					<a href="#" class="navbar-brand"
 						><img
-							src="img/decoration-star.svg"
+							src="../img/decoration-star.svg"
 							alt=""
 							class="star position-relative" />
 						<i
@@ -26,7 +26,7 @@
 				></span>
 				<a href="#"> </a>
 				<img
-					src="img/banner-svgrepo-com.svg"
+					src="../img/banner-svgrepo-com.svg"
 					alt=""
 					class="banner position-absolute" />
 				<button
@@ -65,8 +65,8 @@
 				<div class="row">
 					<div class="col-md-6 mx-auto">
 						<div class="card bg-info">
-							<div class="card-header bg-primary text-white">
-								<h4><i class="fas fa-user-plus"></i> Register</h4>
+							<div class="card-header pt-3 bg-primary text-white">
+								<h4><i class="fas fa-user-plus"></i> Teacher Registration</h4>
 							</div>
 							<div class="card-body">
 								<form action="index.html">
@@ -101,6 +101,34 @@
 											class="form-control my-3 bg-secondary"
 											placeholder="Email"
 											required />
+										<div class="mb-2">
+											<input
+												type="text"
+												class="form-control fw-bold bg-secondary mb-3 text-dark"
+												placeholder="Phone" />
+										</div>
+										<div class="mb-3">
+											<select
+												name="interest"
+												id="interest"
+												class="form-select text-white bg-warning">
+												<option>Departments</option>
+												<option value="">Python</option>
+												<option value="">Electrician</option>
+												<option value="">Pony Tamer</option>
+												<option value="">Dollarama Employee</option>
+											</select>
+										</div>
+										<div class="mb-3">
+											<label
+												for="exampleFormControlTextarea1"
+												class="form-label"></label>
+											<textarea
+												class="form-control fw-bold bg-warning"
+												id="exampleFormControlTextarea1"
+												rows="3"
+												placeholder="Educational Background"></textarea>
+										</div>
 									</div>
 									<div class="form-group">
 										<input
@@ -117,6 +145,15 @@
 											class="form-control my-3 bg-secondary"
 											placeholder="Confirm Password"
 											required />
+									</div>
+
+									<div class="mb-4 form-check">
+										<input type="checkbox" name="" id="agree-check" />
+										<label for="agree-check" class="form-check-label"
+											>I hereby agree to
+											<a href="index.html"
+												>AUTISMO <i class="fas fa-arrow-down"></i></a
+										></label>
 									</div>
 									<div class="d-flex flex-row justify-content-center">
 										<div class="d-flex">
@@ -136,7 +173,7 @@
 
 		<footer class="footer bg-secondary py-5">
 			<img
-				src="img/linux-opened-svgrepo-com.svg"
+				src="../img/linux-opened-svgrepo-com.svg"
 				alt=""
 				class="penguin pengiun position-absolute" />
 			<div class="container">
@@ -194,10 +231,10 @@
 			</div>
 		</footer>
 		<button class="to-top-btn" id="to-top">
-			<img src="img/up-arrow.png" alt="" />
+			<img src="../img/up-arrow.png" alt="" />
 		</button>
-		<script src="js/replaceme.min.js"></script>
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/script.js"></script>
+		<script src="../js/replaceme.min.js"></script>
+		<script src="../js/bootstrap.bundle.min.js"></script>
+		<script src="../js/script.js"></script>
 	</body>
 </html>
