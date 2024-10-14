@@ -3,11 +3,15 @@ $font-family-sans-serif: "Space Grotesk", sans-serif;
 $primary: #67bbbc;
 $secondary: rgb(89, 89, 0);
 $danger: #fa5931;
-$info: rgb(110, 200, 165);
-$warning: rgb(226, 178, 105);
+$info: #1b1e19;
+$warning: rgb(165, 181, 99);
 $dark: #413636;
-$body-bg: rgb(147, 180, 202);
-$body-color: #ededed;
+$success: rgb(200, 226, 140);
+$body-bg: rgb(66, 17, 17);
+$body-color: #a69999;
+
+// input button
+$input-group-addon-color: rgb(68, 67, 60);
 
 // Spacing
 $spacer: 1rem !default;

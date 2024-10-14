@@ -60,18 +60,6 @@
 				</div>
 			</div>
 		</nav>
-		<!-- breadcrumbs  -->
-		<section class="my-4">
-			<div class="container">
-				<nav aria-label="breadcrumb">
-					<ol class="breadcrumb">
-						<li class="breadcrumb-item"><a href="#">Home</a></li>
-						<li class="breadcrumb-item"><a href="#">Library</a></li>
-						<li class="breadcrumb-item active" aria-current="page">Data</li>
-					</ol>
-				</nav>
-			</div>
-		</section>
 
 		<!-- title  -->
 		<section class="my-4">
@@ -126,6 +114,87 @@
 			</div>
 		</section>
 
+		<!-- msg modal  -->
+		<div
+			class="modal fade"
+			id="CourseModal"
+			tabindex="-1"
+			data-bs-backdrop="static"
+			data-bs-keyboard="false"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content bg-secondary">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel">
+							Course Creator
+						</h1>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="input-group my-3">
+								<label class="input-group-text bg-danger" for="inputGroupFile01"
+									>Photo</label
+								>
+								<input
+									type="file"
+									class="form-control text-dark"
+									id="inputGroupFile01" />
+							</div>
+
+							<div class="mb-3">
+								<label for="exampleFormControlTextarea1" class="col-form-label"
+									>Message Body</label
+								>
+								<textarea
+									class="form-control"
+									id="exampleFormControlTextarea1"
+									rows="3"></textarea>
+							</div>
+							<div class="input-group input-group-sm">
+								<span class="input-group-text">Footer</span>
+								<textarea
+									class="form-control"
+									aria-label="With textarea"></textarea>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-danger rounded-2"
+							data-bs-dismiss="modal">
+							Close
+						</button>
+						<button type="button" class="btn rounded-2 btn-success">
+							Create Course
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- modal button  -->
+		<section class="pb-3">
+			<div class="container py-4">
+				<div class="card">
+					<div class="d-flex justify-content-end">
+						<button
+							type="button"
+							class="btn btn-danger mx-auto rounded-2 px-8"
+							data-bs-toggle="modal"
+							data-bs-target="#CourseModal">
+							Reply Message
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
 		<footer class="footer bg-secondary py-5">
 			<img
 				src="../img/linux-opened-svgrepo-com.svg"

@@ -11,81 +11,51 @@
 			rel="stylesheet" />
 		<title>Sassy</title>
 	</head>
-	<nav class="navbar bg-dark sticky-top">
-		<div class="container-fluid">
+	<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+		<div class="container">
+			<span class="fa-stack">
+				<a href="#" class="navbar-brand"
+					><img
+						src="../img/decoration-star.svg"
+						alt=""
+						class="star position-relative" />
+					<i
+						class="fas fa-user-graduate fa-stack-2x ps-4 ms-5"
+						style="color: rgb(255, 255, 255)"></i> </a
+			></span>
+			<a href="#"> </a>
+			<img
+				src="../img/banner-svgrepo-com.svg"
+				alt=""
+				class="banner position-absolute" />
 			<button
 				class="navbar-toggler"
 				type="button"
-				data-bs-toggle="offcanvas"
-				data-bs-target="#offcanvasNavbar"
-				aria-controls="offcanvasNavbar"
-				aria-label="Toggle navigation">
+				data-bs-toggle="collapse"
+				data-bs-target="#navbarNavDropdown">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<a class="navbar-brand text-light" href="#">Offcanvas navbar</a>
-
-			<div
-				class="offcanvas bg-warning offcanvas-start"
-				tabindex="-1"
-				id="offcanvasNavbar"
-				aria-labelledby="offcanvasNavbarLabel">
-				<div class="offcanvas-header">
-					<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-					<button
-						type="button"
-						class="btn-close"
-						data-bs-dismiss="offcanvas"
-						aria-label="Close"></button>
-				</div>
-				<div class="offcanvas-body">
-					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Link</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a
-								class="nav-link dropdown-toggle"
-								href="#"
-								role="button"
-								data-bs-toggle="dropdown"
-								aria-expanded="false">
-								Dropdown
-							</a>
-							<ul class="dropdown-menu">
-								<li>
-									<button
-										type="button"
-										class="btn btn-primary"
-										data-bs-toggle="modal"
-										data-bs-target="#exampleModal"
-										data-bs-whatever="@mdo">
-										Open modal for @mdo
-									</button>
-								</li>
-								<li><a class="dropdown-item" href="#">Another action</a></li>
-								<li>
-									<hr class="dropdown-divider" />
-								</li>
-								<li>
-									<a class="dropdown-item" href="#">Something else here</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-					<form class="d-flex mt-3" role="search">
-						<input
-							class="form-control me-2"
-							type="search"
-							placeholder="Search"
-							aria-label="Search" />
-						<button class="btn btn-outline-success" type="submit">
-							Search
-						</button>
-					</form>
-				</div>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Courses</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Register</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+				</ul>
+				<span class="nav-item">
+					<span class="fa-stack">
+						<a href="https://facebook.com" target="_blank">
+							<i class="fas fa-circle fa-stack-2x"></i>
+							<i class="fab fa-twitter fa-stack-1x text-white"></i>
+						</a>
+					</span>
+					<span class="fa-stack">
+						<a href="https://facebook.com" target="_blank">
+							<i class="fas fa-circle fa-stack-2x"></i>
+							<i class="fab fa-facebook fa-stack-1x text-white"></i>
+						</a>
+					</span>
+				</span>
 			</div>
 		</div>
 	</nav>
@@ -94,16 +64,18 @@
 
 	<div
 		class="modal fade"
-		id="exampleModal"
+		id="CourseModal"
 		tabindex="-1"
 		data-bs-backdrop="static"
 		data-bs-keyboard="false"
 		aria-labelledby="exampleModalLabel"
 		aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content bg-secondary">
 				<div class="modal-header">
-					<h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+					<h1 class="modal-title fs-5" id="exampleModalLabel">
+						Course Creator
+					</h1>
 					<button
 						type="button"
 						class="btn-close"
@@ -112,26 +84,200 @@
 				</div>
 				<div class="modal-body">
 					<form>
-						<div class="mb-3">
-							<label for="recipient-name" class="col-form-label"
-								>Recipient:</label
+						<div class="input-group input-group-sm">
+							<span class="input-group-text">Title</span>
+							<textarea
+								class="form-control"
+								aria-label="With textarea"></textarea>
+						</div>
+						<div class="my-3">
+							<select
+								name="interest"
+								id="interest"
+								class="form-select text-white bg-dark">
+								<option>Departments</option>
+								<option value="">Python</option>
+								<option value="">Electrician</option>
+								<option value="">Pony Tamer</option>
+								<option value="">Dollarama Employee</option>
+							</select>
+						</div>
+						<div class="input-group my-3">
+							<label class="input-group-text bg-danger" for="inputGroupFile01"
+								>Banner Photo</label
 							>
-							<input type="text" class="form-control" id="recipient-name" />
+							<input
+								type="file"
+								class="form-control text-dark"
+								id="inputGroupFile01" />
+						</div>
+						<div class="input-group my-3">
+							<label class="input-group-text bg-danger" for="inputGroupFile01"
+								>Photo Icon</label
+							>
+							<input
+								type="file"
+								class="form-control text-dark"
+								id="inputGroupFile01" />
 						</div>
 						<div class="mb-3">
-							<label for="message-text" class="col-form-label">Message:</label>
-							<textarea class="form-control" id="message-text"></textarea>
+							<label for="exampleFormControlTextarea1" class="col-form-label"
+								>Course Description</label
+							>
+							<textarea
+								class="form-control"
+								id="exampleFormControlTextarea1"
+								rows="3"></textarea>
+						</div>
+						<div class="mb-3">
+							<label for="exampleFormControlTextarea1" class="col-form-label"
+								>Educational Requirement</label
+							>
+							<textarea
+								class="form-control"
+								id="exampleFormControlTextarea1"
+								rows="3"></textarea>
+						</div>
+						<div class="mb-3">
+							<label for="start-date">Start Date:</label>
+							<input type="date" id="C-Start-Date" name="C-Start-Date" />
+
+							<label for="start-date">End Date:</label>
+							<input type="date" id="C-End-Date" name="E-End-Date" />
 						</div>
 					</form>
 				</div>
 				<div class="modal-footer">
 					<button
 						type="button"
-						class="btn btn-secondary"
+						class="btn btn-danger rounded-2"
 						data-bs-dismiss="modal">
 						Close
 					</button>
-					<button type="button" class="btn btn-primary">Send message</button>
+					<button type="button" class="btn rounded-2 btn-success">
+						Create Course
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Article Modal  -->
+	<div
+		class="modal fade"
+		id="ArticleModal"
+		tabindex="-1"
+		data-bs-backdrop="static"
+		data-bs-keyboard="false"
+		aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable modal-lg">
+			<div class="modal-content bg-success text-black">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel">New Article</h1>
+					<button
+						type="button"
+						class="btn-close"
+						data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="input-group input-group-sm">
+							<span class="input-group-text">Title</span>
+							<textarea
+								class="form-control"
+								aria-label="With textarea"></textarea>
+						</div>
+						<div class="input-group my-3">
+							<label class="input-group-text bg-danger" for="inputGroupFile01"
+								>Head Photo</label
+							>
+							<input
+								type="file"
+								class="form-control text-dark"
+								id="inputGroupFile01" />
+						</div>
+						<div class="input-group input-group-sm">
+							<span class="input-group-text">Photo Footer</span>
+							<textarea
+								class="form-control"
+								aria-label="With textarea"></textarea>
+						</div>
+
+						<div class="mb-3">
+							<label for="exampleFormControlTextarea1" class="col-form-label"
+								>Paragraph 1</label
+							>
+							<textarea
+								class="form-control"
+								id="exampleFormControlTextarea1"
+								rows="3"></textarea>
+						</div>
+
+						<div class="mb-3">
+							<label for="exampleFormControlTextarea1" class="col-form-label"
+								>Paragraph 2</label
+							>
+							<textarea
+								class="form-control"
+								id="exampleFormControlTextarea1"
+								rows="3"></textarea>
+						</div>
+
+						<div class="input-group my-3">
+							<label class="input-group-text bg-danger" for="inputGroupFile01"
+								>Body Photo</label
+							>
+							<input
+								type="file"
+								class="form-control text-dark"
+								id="inputGroupFile01" />
+						</div>
+						<div class="input-group input-group-sm">
+							<span class="input-group-text">Photo Quote</span>
+							<textarea
+								class="form-control"
+								aria-label="With textarea"></textarea>
+						</div>
+						<div class="input-group input-group-sm">
+							<span class="input-group-text">Author/Note</span>
+							<textarea
+								class="form-control"
+								aria-label="With textarea"></textarea>
+						</div>
+						<div class="input-group input-group-sm">
+							<span class="input-group-text">Source</span>
+							<textarea
+								class="form-control"
+								aria-label="With textarea"></textarea>
+						</div>
+						<div class="mb-3">
+							<label for="exampleFormControlTextarea1" class="col-form-label"
+								>Paragraph 2</label
+							>
+							<textarea
+								class="form-control"
+								id="exampleFormControlTextarea1"
+								rows="3"></textarea>
+						</div>
+						<div class="input-group input-group-sm">
+							<span class="input-group-text">Outro</span>
+							<textarea
+								class="form-control"
+								aria-label="With textarea"></textarea>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button
+						type="button"
+						class="btn btn-danger rounded-2"
+						data-bs-dismiss="modal">
+						Close
+					</button>
+					<button type="button" class="btn rounded-2 btn-warning">
+						Create Article
+					</button>
 				</div>
 			</div>
 		</div>
@@ -139,13 +285,764 @@
 
 	<body>
 		<header class="header position-realtive">
-			<div class="container">
+			<div class="container text-warning">
 				<div class="row">
-					<div class="col-lg-12"><h1 class="mt-7">Kitty Cat Dance</h1></div>
+					<div class="col-md-6 flex-fill">
+						<h1 class="mt-5">Welcome Teacher</h1>
+					</div>
+					<div class="col-md-6 flex-fill">
+						<h1 class="mt-5">Department Title</h1>
+					</div>
+				</div>
+				<div class="d-flex flex-fill">
+					<div class="flex-fill px-1">
+						<div
+							class="card"
+							style="background-color: rgba(107, 161, 130, 0.7)">
+							<div class="d-flex justify-content-between">
+								<h2 class="card-title fw-bold my-3 mx-2">Course title</h2>
+								<img src="../img/capy.jpg" alt="" class="career-logo" />
+							</div>
+
+							<h5 class="mb-3 mx-2">Department</h5>
+
+							<h6 class="card-subtitle mb-3 mx-2 text-body-secondary">
+								Date - 2024
+							</h6>
+							<div class="card-body">
+								<p><strong>course description</strong></p>
+							</div>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">Start - End Date</li>
+							</ul>
+							<div class="card-body">
+								<div class="d-flex justify-content-end">
+									<button
+										type="button"
+										class="btn text-light rounded-1 text-center btn-danger">
+										<i class="far text-dark fa-check"></i> Grade
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex-fill px-1">
+						<div
+							class="card"
+							style="background-color: rgba(107, 161, 130, 0.7)">
+							<div class="d-flex justify-content-between">
+								<h2 class="card-title fw-bold my-3 mx-2">Course title</h2>
+								<img src="../img/capy.jpg" alt="" class="career-logo" />
+							</div>
+
+							<h5 class="mb-3 mx-2">Department</h5>
+
+							<h6 class="card-subtitle mb-3 mx-2 text-body-secondary">
+								Date - 2024
+							</h6>
+							<div class="card-body">
+								<p><strong>course description</strong></p>
+							</div>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">Start - End Date</li>
+							</ul>
+							<div class="card-body">
+								<div class="d-flex justify-content-end">
+									<button
+										type="button"
+										class="btn text-light rounded-1 text-center btn-danger">
+										<i class="far text-dark fa-check"></i> Grade
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex-fill px-1">
+						<div
+							class="card"
+							style="background-color: rgba(107, 161, 130, 0.7)">
+							<div class="d-flex justify-content-between">
+								<h2 class="card-title fw-bold my-3 mx-2">Course title</h2>
+								<img src="../img/capy.jpg" alt="" class="career-logo" />
+							</div>
+
+							<h5 class="mb-3 mx-2">Department</h5>
+
+							<h6 class="card-subtitle mb-3 mx-2 text-body-secondary">
+								Date - 2024
+							</h6>
+							<div class="card-body">
+								<p><strong>course description</strong></p>
+							</div>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">Start - End Date</li>
+							</ul>
+							<div class="card-body">
+								<div class="d-flex justify-content-end">
+									<button
+										type="button"
+										class="btn rounded-1 text-light text-center btn-danger">
+										<i class="far text-dark fa-check"></i> Grade
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</header>
-		<section></section>
+
+		<!-- mainpage  -->
+		<section class="bg-dark">
+			<div class="container py-5">
+				<div class="row">
+					<div class="col-md-12 mx-auto">
+						<div class="card bg-warning">
+							<h3 class="card-title my-4 mx-2 text-dark">Teaching Course #1</h3>
+							<hr />
+							<div class="card-body">
+								<!-- student # 1 -->
+								<div class="row">
+									<div class="col-md-11 mx-auto">
+										<div class="card text-warning bg-secondary">
+											<div class="card-body">
+												<div class="d-flex">
+													<div class="p-1 flex-fill col-md-3">
+														Student Name #1
+													</div>
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															Grading
+														</div>
+													</div>
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															Submit
+														</div>
+													</div>
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															Score
+														</div>
+													</div>
+												</div>
+												<hr />
+												<div class="d-flex">
+													<div class="p-1 flex-fill col-md-3">
+														Assignment #1
+													</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<textarea
+																class="form-control"
+																id="Grade #1"
+																rows="1"
+																style="width: 70px; height: 10px"></textarea>
+														</div>
+													</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<button
+																type="button"
+																class="btn p-1 btn-success rounded-2">
+																Submit
+															</button>
+														</div>
+													</div>
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<h5 class="fw-bold">88</h5>
+														</div>
+													</div>
+												</div>
+												<!-- Homework  -->
+												<hr />
+												<div class="d-flex">
+													<div class="p-1 flex-fill col-md-3">Homework #1</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<textarea
+																class="form-control"
+																id="Grade #1"
+																rows="1"
+																style="width: 70px; height: 10px"></textarea>
+														</div>
+													</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<button
+																type="button"
+																class="btn p-1 btn-success rounded-2">
+																Submit
+															</button>
+														</div>
+													</div>
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<h5 class="fw-bold">88</h5>
+														</div>
+													</div>
+												</div>
+												<!-- Assignment #2 -->
+												<hr />
+												<div class="d-flex">
+													<div class="p-1 flex-fill col-md-3">
+														Assignment #2
+													</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<textarea
+																class="form-control"
+																id="Grade #1"
+																rows="1"
+																style="width: 70px; height: 10px"></textarea>
+														</div>
+													</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<button
+																type="button"
+																class="btn p-1 btn-success rounded-2">
+																Submit
+															</button>
+														</div>
+													</div>
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<h5 class="fw-bold">88</h5>
+														</div>
+													</div>
+												</div>
+												<hr />
+												<!-- Test #1 -->
+												<div class="d-flex">
+													<div class="p-1 flex-fill col-md-3">Test #1</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<textarea
+																class="form-control"
+																id="Grade #1"
+																rows="1"
+																style="width: 70px; height: 10px"></textarea>
+														</div>
+													</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<button
+																type="button"
+																class="btn p-1 btn-success rounded-2">
+																Submit
+															</button>
+														</div>
+													</div>
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<h5 class="fw-bold">88</h5>
+														</div>
+													</div>
+												</div>
+												<hr />
+												<div class="d-flex">
+													<div class="p-1 flex-fill col-md-3">Exam</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<textarea
+																class="form-control"
+																id="Grade #1"
+																rows="1"
+																style="width: 70px; height: 10px"></textarea>
+														</div>
+													</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<button
+																type="button"
+																class="btn p-1 btn-success rounded-2">
+																Submit
+															</button>
+														</div>
+													</div>
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<h5 class="fw-bold">88</h5>
+														</div>
+													</div>
+												</div>
+												<hr />
+												<!-- Pass Student -->
+												<div class="d-flex">
+													<div class="p-1 flex-fill col-md-3">
+														Final Grade Student
+													</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<select
+																class="form-select form-select-sm"
+																aria-label="Small select example">
+																<option selected>Certify</option>
+																<option value="1">Pass</option>
+																<option value="2">Failed</option>
+															</select>
+														</div>
+													</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<button
+																type="button"
+																class="btn p-1 btn-danger rounded-2">
+																Submit
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- pagenation -->
+								<div class="container my-5">
+									<div class="col-lg-12">
+										<div class="">
+											<nav aria-label="Page w-auto navigation example">
+												<ul
+													class="pagination justify-content-center text-center">
+													<li class="page-item">
+														<a
+															class="career-link page-link text-dark bg-success"
+															>Previous</a
+														>
+													</li>
+													<li class="page-item">
+														<a
+															class="career-link page-link text-dark bg-success"
+															href="#"
+															>1</a
+														>
+													</li>
+													<li class="page-item">
+														<a
+															class="career-link page-link text-dark bg-success"
+															href="#"
+															>2</a
+														>
+													</li>
+													<li class="page-item">
+														<a
+															class="career-link page-link text-dark bg-success"
+															href="#"
+															>3</a
+														>
+													</li>
+													<li class="page-item">
+														<a
+															class="career-link page-link text-dark bg-success"
+															href="#"
+															>Next</a
+														>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+
+								<!-- Course Material  -->
+								<div class="row my-5">
+									<div class="col-md-11 mx-auto">
+										<div class="card bg-secondary text-dark">
+											<h3 class="text-warning mx-2 mt-3">Course Material</h3>
+
+											<!-- upload  -->
+											<div class="card-body">
+												<div class="row d-flex flex-column">
+													<div class="input-group flex-fill mb-3">
+														<label
+															class="input-group-text bg-danger"
+															for="inputGroupFile01"
+															>Upload</label
+														>
+														<input
+															type="file"
+															class="form-control text-dark"
+															id="inputGroupFile01" />
+													</div>
+													<div class="flex-fill">
+														<div class="card bg-dark my-3">
+															<div class="card-body">
+																<h3 class="fw-bold text-warning">
+																	File Name/Number
+																</h3>
+																<button class="btn bg-warning me-4 rounded-1">
+																	File</button
+																><button class="btn rounded-1 bg-danger">
+																	Delete
+																</button>
+															</div>
+														</div>
+													</div>
+
+													<div class="flex-fill"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- course 2  -->
+		<section class="bg-dark">
+			<div class="container py-5">
+				<div class="row">
+					<div class="col-md-12 mx-auto">
+						<div class="card bg-warning">
+							<h3 class="card-title my-4 mx-2 text-dark">Teaching Course #2</h3>
+							<hr />
+							<div class="card-body">
+								<!-- student # 1 -->
+								<div class="row">
+									<div class="col-md-11 mx-auto">
+										<div class="card text-warning bg-secondary">
+											<div class="card-body">
+												<div class="d-flex">
+													<div class="p-1 flex-fill col-md-3">
+														Student Name #1
+													</div>
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															Grading
+														</div>
+													</div>
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															Submit
+														</div>
+													</div>
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															Score
+														</div>
+													</div>
+												</div>
+												<hr />
+												<div class="d-flex">
+													<div class="p-1 flex-fill col-md-3">
+														Assignment #1
+													</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<textarea
+																class="form-control"
+																id="Grade #1"
+																rows="1"
+																style="width: 70px; height: 10px"></textarea>
+														</div>
+													</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<button
+																type="button"
+																class="btn p-1 btn-success rounded-2">
+																Submit
+															</button>
+														</div>
+													</div>
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<h5 class="fw-bold">88</h5>
+														</div>
+													</div>
+												</div>
+												<!-- Homework  -->
+												<hr />
+												<div class="d-flex">
+													<div class="p-1 flex-fill col-md-3">Homework #1</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<textarea
+																class="form-control"
+																id="Grade #1"
+																rows="1"
+																style="width: 70px; height: 10px"></textarea>
+														</div>
+													</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<button
+																type="button"
+																class="btn p-1 btn-success rounded-2">
+																Submit
+															</button>
+														</div>
+													</div>
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<h5 class="fw-bold">88</h5>
+														</div>
+													</div>
+												</div>
+												<!-- Assignment #2 -->
+												<hr />
+												<div class="d-flex">
+													<div class="p-1 flex-fill col-md-3">
+														Assignment #2
+													</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<textarea
+																class="form-control"
+																id="Grade #1"
+																rows="1"
+																style="width: 70px; height: 10px"></textarea>
+														</div>
+													</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<button
+																type="button"
+																class="btn p-1 btn-success rounded-2">
+																Submit
+															</button>
+														</div>
+													</div>
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<h5 class="fw-bold">88</h5>
+														</div>
+													</div>
+												</div>
+												<hr />
+												<!-- Test #1 -->
+												<div class="d-flex">
+													<div class="p-1 flex-fill col-md-3">Test #1</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<textarea
+																class="form-control"
+																id="Grade #1"
+																rows="1"
+																style="width: 70px; height: 10px"></textarea>
+														</div>
+													</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<button
+																type="button"
+																class="btn p-1 btn-success rounded-2">
+																Submit
+															</button>
+														</div>
+													</div>
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<h5 class="fw-bold">88</h5>
+														</div>
+													</div>
+												</div>
+												<hr />
+												<div class="d-flex">
+													<div class="p-1 flex-fill col-md-3">Exam</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<textarea
+																class="form-control"
+																id="Grade #1"
+																rows="1"
+																style="width: 70px; height: 10px"></textarea>
+														</div>
+													</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<button
+																type="button"
+																class="btn p-1 btn-success rounded-2">
+																Submit
+															</button>
+														</div>
+													</div>
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<h5 class="fw-bold">88</h5>
+														</div>
+													</div>
+												</div>
+												<hr />
+												<!-- Pass Student -->
+												<div class="d-flex">
+													<div class="p-1 flex-fill col-md-3">
+														Final Grade Student
+													</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<select
+																class="form-select form-select-sm"
+																aria-label="Small select example">
+																<option selected>Certify</option>
+																<option value="1">Pass</option>
+																<option value="2">Failed</option>
+															</select>
+														</div>
+													</div>
+
+													<div class="p-1 flex-fill col-md-3">
+														<div class="d-flex justify-content-center">
+															<button
+																type="button"
+																class="btn p-1 btn-danger rounded-2">
+																Submit
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- pagenation -->
+								<div class="container my-5">
+									<div class="col-lg-12">
+										<div class="">
+											<nav aria-label="Page w-auto navigation example">
+												<ul
+													class="pagination justify-content-center text-center">
+													<li class="page-item">
+														<a
+															class="career-link page-link text-dark bg-success"
+															>Previous</a
+														>
+													</li>
+													<li class="page-item">
+														<a
+															class="career-link page-link text-dark bg-success"
+															href="#"
+															>1</a
+														>
+													</li>
+													<li class="page-item">
+														<a
+															class="career-link page-link text-dark bg-success"
+															href="#"
+															>2</a
+														>
+													</li>
+													<li class="page-item">
+														<a
+															class="career-link page-link text-dark bg-success"
+															href="#"
+															>3</a
+														>
+													</li>
+													<li class="page-item">
+														<a
+															class="career-link page-link text-dark bg-success"
+															href="#"
+															>Next</a
+														>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+
+								<!-- Course Material  -->
+								<div class="row my-5">
+									<div class="col-md-11 mx-auto">
+										<div class="card bg-secondary text-dark">
+											<h3 class="text-warning mx-2 mt-3">Course Material</h3>
+
+											<!-- upload  -->
+											<div class="card-body">
+												<div class="row d-flex flex-column">
+													<div class="input-group flex-fill mb-3">
+														<label
+															class="input-group-text bg-danger"
+															for="inputGroupFile01"
+															>Upload</label
+														>
+														<input
+															type="file"
+															class="form-control text-dark"
+															id="inputGroupFile01" />
+													</div>
+													<div class="flex-fill">
+														<div class="card bg-dark my-3">
+															<div class="card-body">
+																<h3 class="fw-bold text-warning">
+																	File Name/Number
+																</h3>
+																<button class="btn bg-warning me-4 rounded-1">
+																	File</button
+																><button class="btn rounded-1 bg-danger">
+																	Delete
+																</button>
+															</div>
+														</div>
+													</div>
+
+													<div class="flex-fill"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- creation modal  -->
+		<section class="bg-dark pb-3">
+			<div class="container py-4">
+				<div class="card bg-dark">
+					<div class="d-flex justify-content-center">
+						<button
+							type="button"
+							class="btn btn-success mx-auto rounded-2 px-8"
+							data-bs-toggle="modal"
+							data-bs-target="#CourseModal">
+							Course Creation
+						</button>
+						<button
+							type="button"
+							class="btn btn-success mx-auto rounded-2 px-8"
+							data-bs-toggle="modal"
+							data-bs-target="#ArticleModal">
+							Article Creation
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<footer class="footer bg-secondary py-5">
 			<img
 				src="../img/linux-opened-svgrepo-com.svg"
